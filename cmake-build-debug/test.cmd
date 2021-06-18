@@ -1,0 +1,1 @@
+httpspeedtest.exe --host localhost:8000 --users 300 --rate 100 --times -1
