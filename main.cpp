@@ -11,8 +11,10 @@ void spam(std::string host, std::string r, std::string t) {
     }
     for (int i = 0; i < times; i++) {
         cpr::Response res = cpr::Get(cpr::Url{host});
-        if (res.status_code != 200) {
-            std::cout << "Reponse: " << res.status_code << " Thread: " << std::this_thread::get_id() << "\n";
+        if (res.status_code >= 400) {
+            std::cout << "Error on thread " << std::this_thread::get_id() << " " << res.status_code << "\n";
+        } else {
+            std::cout << "Response: " << res.status_code << " " << res.elapsed << "\n";
         }
         std::this_thread::sleep_for(std::chrono::milliseconds(rate));
     }
