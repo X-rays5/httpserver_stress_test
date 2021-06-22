@@ -1,3 +1,0 @@
-C:/Users/X-ray/source/repos/httpspeedtest/cmake-build-release/CMakeFiles/httpspeedtest.dir
-C:/Users/X-ray/source/repos/httpspeedtest/cmake-build-release/CMakeFiles/edit_cache.dir
-C:/Users/X-ray/source/repos/httpspeedtest/cmake-build-release/CMakeFiles/rebuild_cache.dir
